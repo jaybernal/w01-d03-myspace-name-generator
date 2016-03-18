@@ -23,6 +23,7 @@ def upcase_downcase(name)
       elsif 
       name[index].downcase
     end
+    name = ""
 end
 
 myspace_name_generator("Jay bernal")

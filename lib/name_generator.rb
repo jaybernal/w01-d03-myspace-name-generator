@@ -9,7 +9,7 @@ def myspace_name_generator(name)
 end
 
 def join_name(name)
-    joining = name
+    joining = name.split("")
 end
 
 def deleting_all_char(name)
@@ -18,12 +18,13 @@ end
 
 def upcase_downcase(name)
 	name.each_with_index do |letter, index|
-    if index % 2 == 0
+    name = if index % 2 == 0
       name[index].upcase
-      else 
-      name[index].downcase
+    else 
+    name = name[index].downcase
     end
-    name = ""
+    name.join
+  end
 end
 
 myspace_name_generator("Jay bernal")

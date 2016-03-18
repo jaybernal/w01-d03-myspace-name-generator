@@ -3,24 +3,25 @@
 
 
 def myspace_name_generator(name)
-    myspace_name = join_first_last_name(first, last)
-    myspace_name = deleting_all_char(first, last)
+    myspace_name = join_name(name)
+    myspace_name = deleting_all_char(name)
+    myspace_name = upcase_downcase(name)
 end
 
-def join_first_last_name(name)
-    joining = first + last
+def join_name(name)
+    joining = name
 end
 
 def deleting_all_char(name)
-	joining_name = joining_name.gsub!(/[^0-9A-Za-z]/, '')
+	name = name.gsub!(/[^0-9A-Za-z]/, '')
 end
 
 def upcase_downcase(name)
 	name.each_with_index do |letter, index|
     if index % 2 == 0
-       name[index].upcase
-       elsif 
-       name[index].downcase
+      name[index].upcase
+      elsif 
+      name[index].downcase
     end
 end
 

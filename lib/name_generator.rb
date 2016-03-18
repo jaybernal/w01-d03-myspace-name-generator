@@ -20,7 +20,7 @@ def upcase_downcase(name)
 	name.each_with_index do |letter, index|
     if index % 2 == 0
       name[index].upcase
-      elsif 
+      else 
       name[index].downcase
     end
     name = ""
